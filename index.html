@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-card">
+            <div class="left-panel">
+                <div class="timer-header">
+                    <h1>ポモドーロタイマー</h1>
+                    <div class="mode-indicator">
+                        <span id="mode-text">作業時間</span>
+                    </div>
+                </div>
+                
+                <div class="timer-display">
+                    <div class="time-text">
+                        <span id="minutes">25</span>:<span id="seconds">00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="timer-controls">
+                    <button id="start-btn" class="btn btn-primary">
+                        <span class="btn-text">開始</span>
+                    </button>
+                    <button id="reset-btn" class="btn btn-secondary">
+                        リセット
+                    </button>
+                </div>
+                
+                <div class="session-info">
+                    <div class="session-counter">
+                        <span>セッション: </span>
+                        <span id="session-count">0</span>
+                    </div>
+                    <div class="next-session">
+                        <span id="next-session-text">次: 休憩時間</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.timer-card {
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    border: 1px solid #404040;
+}
+
+.left-panel {
+    flex: 1;
+    text-align: center;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timer-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.mode-indicator {
+    display: inline-block;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.mode-indicator.break {
+    background: #666666;
+    color: #ffffff;
+}
+
+.timer-display {
+    margin: 40px 0;
+}
+
+.time-text {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timer-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.btn-primary:hover {
+    background: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #404040;
+    color: #ffffff;
+    border: 2px solid #555555;
+}
+
+.btn-secondary:hover {
+    background: #555555;
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.session-info {
+    padding: 24px;
+    background: #404040;
+    border-radius: 8px;
+    border: 1px solid #555555;
+}
+
+.session-counter {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.next-session {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .timer-card {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 20px;
+    }
+    
+    .timer-header h1 {
+        font-size: 2rem;
+    }
+    
+    .time-text {
+        font-size: 4rem;
+    }
+    
+    .timer-controls {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+} 
